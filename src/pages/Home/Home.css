@@ -1,0 +1,246 @@
+.home {
+    padding: 0px 30px;
+    padding-bottom: 100px;
+}
+
+.hero {
+    max-width: 800px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.hero h1 {
+    font-size: max(4vw, 36px);
+}
+
+.hero p {
+    width: 75%;
+    line-height: 1.5;
+}
+
+.hero form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 8px;
+    width: 80%;
+    font-size: 20px;
+}
+
+.hero input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+.hero button {
+    border: none;
+    background-color: #7927ff;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.crypto-table {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(129, 98, 194, 0.15), rgba(134, 33, 181, 0.15));
+    color: white;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    min-width: 600px;
+}
+
+.table-layout:last-child {
+    border: none;
+}
+
+.table-layout > div {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: center;
+    gap: 10px;
+}
+
+.table-layout div img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+    .home {
+        padding: 0px 15px;
+        padding-bottom: 50px;
+    }
+
+    .hero {
+        margin: 40px auto;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: max(6vw, 28px);
+    }
+
+    .hero p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .hero form {
+        width: 90%;
+    }
+
+    .hero input {
+        font-size: 14px;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .crypto-table {
+        margin: 0 15px;
+    }
+
+    .table-layout {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding: 0px 10px;
+        padding-bottom: 30px;
+    }
+
+    .hero {
+        margin: 30px auto;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: max(8vw, 24px);
+    }
+
+    .hero p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .hero form {
+        padding: 5px;
+    }
+
+    .hero input {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+
+    .hero button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .crypto-table {
+        margin: 0 10px;
+    }
+
+    .table-layout {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .table-layout div img {
+        width: 25px;
+        height: 25px;
+    }
+}
+.table-layout .green{
+    color: green;
+    text-align: center;
+}
+.table-layout .red{
+    color: red;
+    text-align: center;
+}
+/* ... (previous CSS remains unchanged) ... */
+
+.table-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    min-width: 600px;
+}
+
+.table-layout:last-child {
+    border: none;
+}
+
+.table-layout > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.table-layout div img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* New styles for coin name and image alignment */
+.table-layout > div:nth-child(2) {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.table-layout > div:nth-child(2) p {
+    text-align: left;
+}
+
+/* ... (rest of the CSS remains unchanged) ... */
+
+@media (max-width: 480px) {
+    /* ... (previous media query styles remain unchanged) ... */
+
+    .table-layout div img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .table-layout > div:nth-child(2) {
+        padding-left: 10px;
+    }
+}

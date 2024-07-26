@@ -1,0 +1,77 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:#10111C;
+  padding: 10px 20px;
+  color:white;
+}
+
+.logo {
+  width: 40px;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li:hover {
+  color: #1e90ff;
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right-navbar select {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #010000;
+  color: white;
+  cursor: pointer;
+}
+
+.right-navbar select:focus {
+  outline: none;
+}
+
+.right-navbar .user {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+.right-navbar .user:hover {
+  fill: #1e90ff;
+}
+
+.user-btn {
+  background: #000;
+  outline: none;
+  border: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* Hide li tags on small devices */
+@media (max-width: 768px) {
+  .navbar ul li {
+    display: none;
+  }
+}

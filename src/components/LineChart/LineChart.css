@@ -1,0 +1,26 @@
+.chart-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #ffffff;
+  }
+  
+  .error {
+    color: #ff6b6b;
+  }
